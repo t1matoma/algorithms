@@ -12,10 +12,10 @@ function binarySearch($array, $num){
             $low = $mid+1;
         }
         else{
-            return $mid;
-            
+            return "$mid - index number";
         }
     }
+    return "number not found";
 }
 
-echo binarySearch([1,2,3,4,6,9,11],6);
+echo binarySearch([1,2,3,4,6,9,11],11);
